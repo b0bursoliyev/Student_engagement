@@ -53,6 +53,7 @@ def process_csv_file(file_path, output_dir):
     except Exception as e:
         print(f"Error processing {file_path}: {str(e)}")
 
+
 def main():
     # Create output directory
     output_dir = 'output_aggregated'
