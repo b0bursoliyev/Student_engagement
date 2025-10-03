@@ -39,7 +39,7 @@ def process_csv_file(file_path, output_dir):
 
         # Create DataFrame and calculate means
         df = pd.DataFrame({'Rating': data})
-        df['interval'] = df.index // 7
+        df['interval'] = df.index // 2
         rating_means = df.groupby('interval')['Rating'].mean().reset_index()
         
         # Save results
